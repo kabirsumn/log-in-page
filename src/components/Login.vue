@@ -32,14 +32,16 @@ export default {};
 
 <style>
 #form {
+  background-color: #eee;
   color: #666;
   width: 400px;
+  margin: 40px auto;
+  padding: 1.75rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 0 1rem 1.75rem;
   border: 1px solid #d1bfbf;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -70,5 +72,14 @@ label {
   border-radius: 6px;
   outline: none;
   cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #82ecae;
+  color: #666;
+}
+
+#form input:focus {
+  border: 2px solid #82ecae;
 }
 </style>

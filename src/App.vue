@@ -1,6 +1,6 @@
 <template>
   <div id="container">
-    <h3>You must <span class="log-in">Log in</span></h3>
+    <h2>You must <span class="log-in">Log in</span></h2>
     <Login />
   </div>
 </template>
@@ -20,13 +20,22 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 #container {
+  height: 100vh;
+  background-color: #e0dada;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 1rem;
+}
+
+.log-in {
+  color: #45e989;
+  cursor: pointer;
+  font-weight: 550;
+  font-style: italic;
 }
 </style>
