@@ -1,29 +1,31 @@
 <template>
-  <form action="post" id="form">
-    <h3>Get start</h3>
-    <label for="username">
-      <p>User Name</p>
-      <input
-        type="text"
-        name="username"
-        id="username"
-        placeholder="username"
-        required
-      />
-    </label>
-    <label for="password">
-      <p>Password</p>
-      <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="password"
-        required
-      />
-    </label>
+  <div class="login-form" @click.self="$emit('close')">
+    <form action="post" id="form">
+      <h3>Get start</h3>
+      <label for="username">
+        <p>User Name</p>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="username"
+          required
+        />
+      </label>
+      <label for="password">
+        <p>Password</p>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+          required
+        />
+      </label>
 
-    <button class="btn" type="submit">Log in</button>
-  </form>
+      <button class="btn" type="submit">Log in</button>
+    </form>
+  </div>
 </template>
 
 <script>
@@ -47,6 +49,14 @@ export default {};
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.login-form {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(116, 112, 112, 0.582);
+  position: fixed;
+  top: 0;
 }
 label {
   width: 100%;
